@@ -75,7 +75,7 @@ jobs:
     needs: get_version
     uses: christianlangevin/modflow6/.github/workflows/release.yml@develop
     with:
-      branch: feat-swi-correction2
+      branch: feat-swi
       releasemode: false
       run_tests: true
       version: ${{ needs.get_version.outputs.version }}
