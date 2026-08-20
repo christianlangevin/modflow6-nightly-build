@@ -29,20 +29,20 @@ jobs:
     steps:
 
       - name: Checkout repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: MODFLOW-ORG/modflow6-nightly-build
 
       - name: Checkout modflow6
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: MODFLOW-ORG/modflow6
           path: modflow6
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install Python packages
         run: pip install -r requirements.txt
